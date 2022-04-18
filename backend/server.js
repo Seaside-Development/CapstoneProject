@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 //api pathway
-app.use('/api/services', require('./routes/serviceRoutes'));
+app.use('/api/jobrequests', require('./routes/jobrequestsRoutes'));
 
 //pathway to the error
 app.use(errorHandler);
