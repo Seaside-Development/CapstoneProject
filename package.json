@@ -1,11 +1,14 @@
 {
-  "name": "seasidedevelopmentapp",
+  "name": "seasidedevelopmentapp-server",
   "version": "1.0.0",
   "description": "Service Finder app for capstone project",
   "main": "server.js",
   "scripts": {
-    "start": "node backend/server.js",
-    "server": "nodemon backend/server.js"
+    "client": "cd client && npm start",
+    "server": "nodemon backend/server.js",
+    "build": "cd client && npm run build",
+    "dev": "concurrently -kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "start": "node backend/server.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +25,8 @@
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "express-async-handler": "^1.2.0",
-    "mongoose": "^6.3.0"
+    "mongoose": "^6.3.0",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

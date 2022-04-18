@@ -1,7 +1,10 @@
 {
-  "name": "my-app",
+  "name": "seaside-Capstone",
   "version": "0.1.0",
+  "description": "A service finder application",
   "private": true,
+  "license": "MIT",
+  "proxy": "http://localhost:3000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
