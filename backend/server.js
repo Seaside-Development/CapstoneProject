@@ -1,11 +1,12 @@
 const express = require('express');
-const compression = require('compression');
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
-
+const colors = require('colors');
 const dotenv = require('dotenv').config();
 const {errorHandler} = require('./middleware/errorMiddleware');
+const connectDB = require('./config/db');
 const port = process.env.PORT || 5000;
+
+
+connectDB();
 
 const app = express();
 
