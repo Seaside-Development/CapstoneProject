@@ -1,6 +1,6 @@
 import React from "react";
 
-const JobDescription = () => {
+const JobDescriptionPage = () => {
     return (
         <div>
         <h1>JobDescription Page</h1>
@@ -8,4 +8,4 @@ const JobDescription = () => {
     );
 }
 
-export default JobDescription;
+export default JobDescriptionPage;

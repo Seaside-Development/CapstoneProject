@@ -1,6 +1,6 @@
 import React from "react";
 
-const CustomerReview = () => {
+const CustomerReviewPage = () => {
     return (
         <div>
         <h1>CustomerReview Page</h1>
@@ -8,4 +8,4 @@ const CustomerReview = () => {
     );
 }
 
-export default CustomerReview;
+export default CustomerReviewPage;

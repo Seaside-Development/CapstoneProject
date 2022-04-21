@@ -1,6 +1,6 @@
 import React from "react";
 
-const ContractorAccount = () => {
+const ContractorAccountPage = () => {
     return (
         <div>
         <h1>ContractorAccount Page</h1>
@@ -8,4 +8,4 @@ const ContractorAccount = () => {
     );
 }
 
-export default ContractorAccount;
+export default ContractorAccountPage;

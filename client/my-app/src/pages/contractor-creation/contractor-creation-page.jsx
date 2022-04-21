@@ -1,6 +1,6 @@
 import React from "react";
 
-const ContractorCreation = () => {
+const ContractorCreationPage = () => {
     return (
         <div>
         <h1>ContractorCreation Page</h1>
@@ -8,4 +8,4 @@ const ContractorCreation = () => {
     );
 }
 
-export default ContractorCreation;
+export default ContractorCreationPage;
