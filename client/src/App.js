@@ -1,6 +1,7 @@
 import React, {lazy} from "react";
 import "./App.css";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./components/header/header.components";
 
 //page import
