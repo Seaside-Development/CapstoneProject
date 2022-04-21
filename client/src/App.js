@@ -1,12 +1,13 @@
 import React, {lazy} from "react";
 import "./App.css";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Header from "./components/header/header.components";
 
 //page import
 const HomePage = lazy(() => import('./pages/home/homepage'));
 const DashboardPage = lazy(() => import('./pages/dashboard/dashboardpage'));
 const AboutUsPage = lazy(() => import('./pages/about-us/aboutus-page'));
-const ContactUsPage = lazy(() => import('./pages/home/homepage'));
+const ContactUsPage = lazy(() => import('./pages/contact-us/contact-us-page'));
 const UserAccountPage = lazy(() => import('./pages/account/user-account-page'));
 const ContractorAccountPage = lazy(() => import('./pages/contractor-account/contractor-account-page'));
 const ContractorCreationPage = lazy(() => import('./pages/contractor-creation/contractor-creation-page'));
@@ -20,6 +21,7 @@ const App = () => {
   return (
     <Router>
       <div className="content">
+      <Header/>
         <Routes>
             <Route path='/' element={<HomePage/>}/>
             <Route path='/dashboard' element={<DashboardPage/>}/>
