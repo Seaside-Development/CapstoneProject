@@ -31,7 +31,7 @@ const Header = () => {
         </NavMenu>
         <NavBtn>
           <NavBtnLink to='/signin'>Login In</NavBtnLink>
-          <NavBtnLink to='/signin'>Add Listing</NavBtnLink>
+          <NavBtnLink to='/JobSearchPage'>Add Listing</NavBtnLink>
         </NavBtn>
       </Nav>
     </>
