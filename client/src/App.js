@@ -1,6 +1,6 @@
 import React, {lazy} from "react";
 import "./App.css";
-import { Routes, Route, Redirect } from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 //page import
 const HomePage = lazy(() => import('./pages/home/homepage'));
@@ -14,28 +14,28 @@ const CustomerReviewPage = lazy(() => import('./pages/customer-review/customer-r
 const JobDescriptionPage = lazy(() => import('./pages/job-description/job-description-page'));
 const ReviewsPage = lazy(() => import('./pages/reviews/reviewspage'));
 const SigninSignupPage = lazy(() => import('./pages/singin-and-signup/signin-and-signup-page'));
+const ErrorPage = lazy(() => import('./pages/error/error-page'));
 
 const App = () => {
   return (
-    <div className="App">
-      <p className=" bg-red-500"> TEster</p>
-      <main>
+    <Router>
+      <div className="content">
         <Routes>
-            <Route exact path='/' component={HomePage}/>
-            <Route exact path='/' component={DashboardPage}/>
-            <Route exact path='/' component={AboutUsPage}/>
-            <Route exact path='/' component={UserAccountPage}/>
-            <Route exact path='/' component={ContactUsPage}/>
-            <Route exact path='/' component={ContractorAccountPage}/>
-            <Route exact path='/' component={ContractorCreationPage}/>
-            <Route exact path='/' component={CustomerReviewPage}/>
-            <Route exact path='/' component={DashboardPage}/>
-            <Route exact path='/' component={JobDescriptionPage}/>
-            <Route exact path='/' component={ReviewsPage}/>
-            <Route exact path='/' component={SigninSignupPage}/>
+            <Route path='/' element={<HomePage/>}/>
+            <Route path='/dashboard' element={<DashboardPage/>}/>
+            <Route path='/about-us' element={<AboutUsPage/>}/>
+            <Route path='/accounts' element={<UserAccountPage/>}/>
+            <Route path='/contact-us' element={<ContactUsPage/>}/>
+            <Route path='/contractor-profile' element={<ContractorAccountPage/>}/>
+            <Route path='/service-creation' element={<ContractorCreationPage/>}/>
+            <Route path='/customer-reveiws' element={<CustomerReviewPage/>}/>
+            <Route path='/job-description' element={<JobDescriptionPage/>}/>
+            <Route path='/reviews' element={<ReviewsPage/>}/>
+            <Route path='/signin-signup' element={<SigninSignupPage/>}/>
+            <Route path='*' element={ErrorPage}/>
         </Routes>
-      </main>
-    </div>
+      </div>
+    </Router>
   );
 };
 
