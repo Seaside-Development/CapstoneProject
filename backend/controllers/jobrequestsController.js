@@ -1,5 +1,7 @@
 const asyncHandler = require('express-async-handler');
 
+const JobRequests = require('../models/jobRequestsModel');
+
 // @desc Get all Service
 // @route GET /api/services
 // @access Private
