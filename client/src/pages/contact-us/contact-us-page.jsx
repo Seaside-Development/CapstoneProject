@@ -187,9 +187,9 @@ const ContactUsPage = () => {
                       name="country"
                       class="h-full py-0 pl-4 pr-8 border-transparent bg-transparent text-gray-500 focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
                     >
-                      <option>US</option>
-                      <option>CA</option>
-                      <option>EU</option>
+                      <option>BB</option>
+                      {/* <option>CA</option>
+                      <option>EU</option> */}
                     </select>
                   </div>
                   <input
@@ -198,7 +198,7 @@ const ContactUsPage = () => {
                     id="phone-number"
                     autocomplete="tel"
                     class="py-3 px-4 block w-full pl-20 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
-                    placeholder="+1 (555) 987-6543"
+                    placeholder="+1 (246) 987-6543"
                   />
                 </div>
               </div>
