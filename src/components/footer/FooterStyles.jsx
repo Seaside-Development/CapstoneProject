@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const OptionLink = styled(Link)`
   cursor: pointer;
@@ -12,7 +12,7 @@ export const OptionLink = styled(Link)`
     font-weight: bold;
     display: inline-block;
   }
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 800px) {
     align-items: center;
     display: inline-block;
   }
@@ -20,7 +20,7 @@ export const OptionLink = styled(Link)`
 
 export const List = styled.li`
   display: inline-block;
-`
+`;
 
 export const Container = styled.div`
   padding: 20px;
@@ -33,7 +33,8 @@ export const Container = styled.div`
   font-family: "Poppins", sans-serif;
   @media screen and (max-width: 800px) {
     background: #fffcfd;
-  }`
+  }
+`;
 
 export const OptionLink2 = styled.div`
   cursor: pointer;
@@ -47,7 +48,7 @@ export const OptionLink2 = styled.div`
     color: #000000;
     display: inline-block;
   }
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 800px) {
     align-items: center;
     display: inline-block;
   }
@@ -66,7 +67,7 @@ export const Icon = styled(Link)`
     align-items: center;
     display: inline-block;
   }
-`
+`;
 
 export const Button = styled.button`
   position: absolute;
@@ -77,14 +78,14 @@ export const Button = styled.button`
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
-  top: .5rem;
-  right: .3rem;
+  top: 0.5rem;
+  right: 0.3rem;
   line-height: 0;
-  `
+`;
 
 export const Form = styled.form`
   margin-bottom: 0;
   padding-bottom: 0;
   background-color: grey;
   position: relative;
-`
+`;
