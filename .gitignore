@@ -1,7 +1,9 @@
+<<<<<<< HEAD
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
+/client/node_modules
 /client/node_modules
 node_modules
 /.pnp
@@ -24,3 +26,9 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+=======
+node_modules
+client_modules_dir = os.path.join(client_dir, 'node_modules')
+client/node_modules
+.env
+>>>>>>> parent of 1c8e2f83 (update the structure)
