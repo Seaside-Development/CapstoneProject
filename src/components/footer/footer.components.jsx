@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaGithub, FaInstagram} from "react-icons/fa";
+import {FaFacebook, FaTwitter, FaGithub, FaInstagram} from "react-icons/fa";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
@@ -14,7 +14,7 @@ const Footer = () => {
 
     return (
         <Container>
-            <div className="border-bottom pb-5 mb-4">
+            <div id="footer" className="border-bottom pb-5 mb-4">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-3">

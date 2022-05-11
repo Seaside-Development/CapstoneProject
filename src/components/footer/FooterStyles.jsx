@@ -26,10 +26,10 @@ export const Container = styled.div`
   padding: 20px;
   background-position: center center;
   background-repeat: no-repeat;
+  flex: 1,
   background: #fffcfd;
   bottom: 0;
-  position: absolute;
-  width: 100%;
+  width: WINDOW_WIDTH%;
   font-family: "Poppins", sans-serif;
   @media screen and (max-width: 800px) {
     background: #fffcfd;
