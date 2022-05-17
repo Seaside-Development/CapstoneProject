@@ -22,7 +22,11 @@ export const List = styled.li`
   display: inline-block;
 `;
 
+<<<<<<< HEAD
 // MAIN CONTAINER SURROUNDING THE FOOTER
+=======
+// container for footer
+>>>>>>> 967900842bbb2a5bea6cd12fe4b53083193836a5
 export const Container = styled.div`
 background: rgb(199 210 254);
   padding: 20px;
