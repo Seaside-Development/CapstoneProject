@@ -22,12 +22,13 @@ export const List = styled.li`
   display: inline-block;
 `;
 
+// MAIN CONTAINER SURROUNDING THE FOOTER
 export const Container = styled.div`
 background: rgb(199 210 254);
   padding: 20px;
   background-position: center center;
   background-repeat: no-repeat;
-  flex: 1,
+  flex: 1;
   background: #fffcfd;
   bottom: 0;
   width: WINDOW_WIDTH%;

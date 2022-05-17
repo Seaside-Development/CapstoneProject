@@ -30,7 +30,7 @@ const Header = () => {
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='/signin'>Login In</NavBtnLink>
+          <NavBtnLink to='/signin-signup'>Login In</NavBtnLink>
           <NavBtnLink to='/JobSearchPage'>Add Listing</NavBtnLink>
         </NavBtn>
       </Nav>
