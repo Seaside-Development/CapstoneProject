@@ -4,8 +4,8 @@ const HomePage = () => {
   return (
     <div>
       {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
-      <div class="bg-white">
-        <div class="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div class="flex items-center w-full h-screen  bg-white">
+        <div class="max-w-7xl mx-auto text-center px-4 sm:px-6 lg:py-16 lg:px-8">
           <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             <span class="block pt-10">Barbados Connected...</span>
             <span class="block text-lg">

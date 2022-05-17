@@ -22,6 +22,7 @@ export const List = styled.li`
   display: inline-block;
 `;
 
+// container for footer
 export const Container = styled.div`
 background: rgb(199 210 254);
   padding: 20px;
