@@ -1,9 +1,9 @@
 import React from "react";
 
-const SignupForm = () => {
+const SignupFormPage = () => {
   return (
-    <div>
-      <form className="space-y-8 divide-y divide-gray-200">
+    <div className=" flex justify-center ">
+      <form className=" py-5 space-y-8 divide-y divide-gray-200">
         <div className="space-y-8 divide-y divide-gray-200 sm:space-y-5">
           <div>
             <div>
@@ -485,4 +485,4 @@ const SignupForm = () => {
   );
 };
 
-export default SignupForm;
+export default SignupFormPage;
