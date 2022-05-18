@@ -3,48 +3,50 @@ import React from "react";
 const SignupFormPage = () => {
   return (
     <div className=" flex justify-center ">
-      <form className=" py-5 space-y-8 divide-y divide-gray-200">
-        <div className="space-y-8 divide-y divide-gray-200 sm:space-y-5">
-          <div>
-            <div className="mt-6 sm:mt-5 space-y-6 sm:space-y-5">
-              <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
-                <label
-                  htmlFor="username"
-                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
-                >
-                  Username
-                </label>
-                <div className="mt-1 sm:mt-0 sm:col-span-2">
-                  <input
-                    type="text"
-                    name="username"
-                    id="username"
-                    autoComplete="username"
-                    className="flex-1 block w-full px-3 py-2 focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300 drop-shadow-md"
-                  />
+      <div className="card w-3/6 shadow-md border-round p-8 m-8">
+        <h1 className=" text-center font-semibold text-2xl"> Sign Up Form</h1>
+        <form className=" py-5 space-y-8 divide-y divide-gray-200">
+          <div className="space-y-8 divide-y divide-gray-200 sm:space-y-5">
+            <div>
+              <div className="mt-6 sm:mt-5 space-y-6 sm:space-y-5">
+                <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+                  <label
+                    htmlFor="username"
+                    className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+                  >
+                    Username
+                  </label>
+                  <div className="mt-1 sm:mt-0 sm:col-span-2">
+                    <input
+                      type="text"
+                      name="username"
+                      id="username"
+                      autoComplete="username"
+                      className="flex-1 block w-full px-3 py-2 focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300 drop-shadow-md"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
-                <label
-                  htmlFor="password"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Password
-                </label>
-                <div className="mt-1 sm:mt-0 sm:col-span-2">
-                  <input
-                    id="password"
-                    name="password"
-                    type="password"
-                    autoComplete="current-password"
-                    required
-                    className="flex-1 block w-full px-3 py-2 focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300 drop-shadow-md placeholder-gray-300"
-                    placeholder="*********"
-                  />
+                <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+                  <label
+                    htmlFor="password"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Password
+                  </label>
+                  <div className="mt-1 sm:mt-0 sm:col-span-2">
+                    <input
+                      id="password"
+                      name="password"
+                      type="password"
+                      autoComplete="current-password"
+                      required
+                      className="flex-1 block w-full px-3 py-2 focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300 drop-shadow-md placeholder-gray-300"
+                      placeholder="*********"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+                {/* <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
                 <label
                   htmlFor="cover-photo"
                   className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
@@ -89,163 +91,164 @@ const SignupFormPage = () => {
                     </div>
                   </div>
                 </div>
+              </div> */}
               </div>
             </div>
-          </div>
 
-          <div className="pt-8 space-y-6 sm:pt-10 sm:space-y-5">
-            <div>
-              <h3 className="text-lg leading-6 font-medium text-gray-900">
-                Personal Information
-              </h3>
-              <p className="mt-1 max-w-2xl text-sm text-gray-500">
-                Use a permanent address where you can receive mail.
-              </p>
+            <div className="pt-8 space-y-6 sm:pt-10 sm:space-y-5">
+              <div>
+                <h3 className="text-lg leading-6 font-medium text-gray-900">
+                  Personal Information
+                </h3>
+                <p className="mt-1 max-w-2xl text-sm text-gray-500">
+                  Use a permanent address where you can receive mail.
+                </p>
+              </div>
+              <div className="space-y-6 sm:space-y-5">
+                <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+                  <label
+                    htmlFor="first-name"
+                    className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+                  >
+                    First name
+                  </label>
+                  <div className="mt-1 sm:mt-0 sm:col-span-2">
+                    <input
+                      type="text"
+                      name="first-name"
+                      id="first-name"
+                      autoComplete="given-name"
+                      className="max-w-lg block w-full px-3 py-2 shadow-md focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+                    />
+                  </div>
+                </div>
+
+                <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+                  <label
+                    htmlFor="last-name"
+                    className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+                  >
+                    Last name
+                  </label>
+                  <div className="mt-1 sm:mt-0 sm:col-span-2">
+                    <input
+                      type="text"
+                      name="last-name"
+                      id="last-name"
+                      autoComplete="family-name"
+                      className="max-w-lg block w-full px-3 py-2 shadow-md focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+                    />
+                  </div>
+                </div>
+
+                <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+                  >
+                    Email address
+                  </label>
+                  <div className="mt-1 sm:mt-0 sm:col-span-2">
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      autoComplete="email"
+                      className="block max-w-lg w-full px-3 py-2 shadow-md focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md pl-5"
+                      placeholder="you@example.com"
+                    />
+                  </div>
+                </div>
+
+                <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
+                  <label
+                    htmlFor="street-address"
+                    className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+                  >
+                    Telephone{" "}
+                  </label>
+                  <div className="mt-1 sm:mt-0 sm:col-span-2">
+                    <input
+                      type="text"
+                      name="phone-number"
+                      id="phone-number"
+                      className="block max-w-lg w-full px-3 py-2 shadow-md focus:ring-indigo-500 focus:border-indigo-500 pl-5 sm:text-sm border-gray-300 rounded-md"
+                      placeholder="+1 (246) 822-6543"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="space-y-6 sm:space-y-5">
-              <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
-                <label
-                  htmlFor="first-name"
-                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
-                >
-                  First name
-                </label>
-                <div className="mt-1 sm:mt-0 sm:col-span-2">
-                  <input
-                    type="text"
-                    name="first-name"
-                    id="first-name"
-                    autoComplete="given-name"
-                    className="max-w-lg block w-full px-3 py-2 shadow-md focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
-                  />
-                </div>
-              </div>
 
-              <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
-                <label
-                  htmlFor="last-name"
-                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
-                >
-                  Last name
-                </label>
-                <div className="mt-1 sm:mt-0 sm:col-span-2">
-                  <input
-                    type="text"
-                    name="last-name"
-                    id="last-name"
-                    autoComplete="family-name"
-                    className="max-w-lg block w-full px-3 py-2 shadow-md focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
-                  />
-                </div>
+            <div className="divide-y divide-gray-200 pt-8 space-y-6 sm:pt-10 sm:space-y-5">
+              <div>
+                <h3 className="text-lg leading-6 font-medium text-gray-900">
+                  Notifications
+                </h3>
+                <p className="mt-1 max-w-2xl text-sm text-gray-500">
+                  We'll always let you know about important changes.
+                </p>
               </div>
-
-              <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
-                >
-                  Email address
-                </label>
-                <div className="mt-1 sm:mt-0 sm:col-span-2">
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    autoComplete="email"
-                    className="block max-w-lg w-full px-3 py-2 shadow-md focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md pl-5"
-                    placeholder="you@example.com"
-                  />
-                </div>
-              </div>
-
-              <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
-                <label
-                  htmlFor="street-address"
-                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
-                >
-                  Telephone{" "}
-                </label>
-                <div className="mt-1 sm:mt-0 sm:col-span-2">
-                  <input
-                    type="text"
-                    name="phone-number"
-                    id="phone-number"
-                    className="block max-w-lg w-full px-3 py-2 shadow-md focus:ring-indigo-500 focus:border-indigo-500 pl-5 sm:text-sm border-gray-300 rounded-md"
-                    placeholder="+1 (246) 822-6543"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="divide-y divide-gray-200 pt-8 space-y-6 sm:pt-10 sm:space-y-5">
-            <div>
-              <h3 className="text-lg leading-6 font-medium text-gray-900">
-                Notifications
-              </h3>
-              <p className="mt-1 max-w-2xl text-sm text-gray-500">
-                We'll always let you know about important changes.
-              </p>
-            </div>
-            <div className="space-y-6 sm:space-y-5 divide-y divide-gray-200">
-              <div className="pt-6 sm:pt-5">
-                <div role="group" aria-labelledby="label-notifications">
-                  <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-baseline">
-                    <div>
-                      <div
-                        className="text-base font-medium text-gray-900 sm:text-sm sm:text-gray-700"
-                        id="label-notifications"
-                      >
-                        Push Notifications
+              <div className="space-y-6 sm:space-y-5 divide-y divide-gray-200">
+                <div className="pt-6 sm:pt-5">
+                  <div role="group" aria-labelledby="label-notifications">
+                    <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-baseline">
+                      <div>
+                        <div
+                          className="text-base font-medium text-gray-900 sm:text-sm sm:text-gray-700"
+                          id="label-notifications"
+                        >
+                          Push Notifications
+                        </div>
                       </div>
-                    </div>
-                    <div className="sm:col-span-2">
-                      <div className="max-w-lg">
-                        <p className="text-sm text-gray-500">
-                          These are delivered via SMS to your mobile phone.
-                        </p>
-                        <div className="mt-4 space-y-4">
-                          <div className="flex items-center">
-                            <input
-                              id="push-everything"
-                              name="push-notifications"
-                              type="radio"
-                              className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
-                            />
-                            <label
-                              htmlFor="push-everything"
-                              className="ml-3 block text-sm font-medium text-gray-700"
-                            >
-                              Everything
-                            </label>
-                          </div>
-                          <div className="flex items-center">
-                            <input
-                              id="push-email"
-                              name="push-notifications"
-                              type="radio"
-                              className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
-                            />
-                            <label
-                              htmlFor="push-email"
-                              className="ml-3 block text-sm font-medium text-gray-700"
-                            >
-                              Same as email
-                            </label>
-                          </div>
-                          <div className="flex items-center">
-                            <input
-                              id="push-nothing"
-                              name="push-notifications"
-                              type="radio"
-                              className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
-                            />
-                            <label
-                              htmlFor="push-nothing"
-                              className="ml-3 block text-sm font-medium text-gray-700"
-                            >
-                              No push notifications
-                            </label>
+                      <div className="sm:col-span-2">
+                        <div className="max-w-lg">
+                          <p className="text-sm text-gray-500">
+                            These are delivered via SMS to your mobile phone.
+                          </p>
+                          <div className="mt-4 space-y-4">
+                            <div className="flex items-center">
+                              <input
+                                id="push-everything"
+                                name="push-notifications"
+                                type="radio"
+                                className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
+                              />
+                              <label
+                                htmlFor="push-everything"
+                                className="ml-3 block text-sm font-medium text-gray-700"
+                              >
+                                Everything
+                              </label>
+                            </div>
+                            <div className="flex items-center">
+                              <input
+                                id="push-email"
+                                name="push-notifications"
+                                type="radio"
+                                className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
+                              />
+                              <label
+                                htmlFor="push-email"
+                                className="ml-3 block text-sm font-medium text-gray-700"
+                              >
+                                Same as email
+                              </label>
+                            </div>
+                            <div className="flex items-center">
+                              <input
+                                id="push-nothing"
+                                name="push-notifications"
+                                type="radio"
+                                className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
+                              />
+                              <label
+                                htmlFor="push-nothing"
+                                className="ml-3 block text-sm font-medium text-gray-700"
+                              >
+                                No push notifications
+                              </label>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -255,25 +258,25 @@ const SignupFormPage = () => {
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="pt-5">
-          <div className="flex justify-end">
-            <button
-              type="button"
-              className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-md text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            >
-              Cancel
-            </button>
-            <button
-              type="submit"
-              className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-md text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            >
-              Save
-            </button>
+          <div className="pt-5">
+            <div className="flex justify-end">
+              <button
+                type="button"
+                className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-md text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              >
+                Cancel
+              </button>
+              <button
+                type="submit"
+                className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-md text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              >
+                Save
+              </button>
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   );
 };
