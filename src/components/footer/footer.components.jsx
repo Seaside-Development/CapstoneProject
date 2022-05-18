@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 import { OptionLink, OptionLink2, Icon, Container, List } from "./FooterStyles";
 
