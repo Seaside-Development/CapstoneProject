@@ -47,6 +47,7 @@ const App = () => {
           <Route path="/signin-signup" element={<SigninSignupPage />} />
           <Route path="/jobCreation" element={<JobSearchPage />} />
           <Route path="/signup" element={<SignupFormPage />} />
+          <Route path="/SignupFormPage" element={<SignupFormPage />} />
         </Routes>
         <Footer />
       </div>
