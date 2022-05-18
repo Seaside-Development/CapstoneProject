@@ -15,7 +15,6 @@ import ContractorAccountPage from "./pages/contractor-account/contractor-account
 import ContractorCreationPage from "./pages/contractor-creation/contractor-creation-page";
 import JobDescriptionPage from "./pages/job-description/job-description-page";
 import ReviewsPage from "./pages/reviews/reviewspage";
-import SigninSignupPage from "./pages/singin-and-signup/signin";
 import ErrorPage from "./pages/error/error-page";
 import JobSearchPage from "./pages/job-description/job-search-page";
 import ContractorOverviewPage from "./pages/contractor-overview/contractor-Overview-Page";
@@ -44,8 +43,8 @@ const App = () => {
           <Route path="/job-description" element={<JobDescriptionPage />} />
           <Route path="/contractor" element={<ContractorOverviewPage />} />
           <Route path="/reviews" element={<ReviewsPage />} />
-          <Route path="/signin-signup" element={<SigninSignupPage />} />
           <Route path="/jobCreation" element={<JobSearchPage />} />
+          <Route path="/signinpage" element={<SigninPage/>} />
           <Route path="/SignupFormPage" element={<SignupFormPage />} />
         </Routes>
         <Footer />
