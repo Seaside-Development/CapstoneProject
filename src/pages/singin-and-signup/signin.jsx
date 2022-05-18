@@ -1,6 +1,7 @@
 import React from "react";
 
-const SigninSignupPage = () => {
+const SigninPage = () => {
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted");
@@ -118,4 +119,4 @@ const SigninSignupPage = () => {
   );
 };
 
-export default SigninSignupPage;
+export default SigninPage;

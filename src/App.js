@@ -15,11 +15,11 @@ import ContractorAccountPage from "./pages/contractor-account/contractor-account
 import ContractorCreationPage from "./pages/contractor-creation/contractor-creation-page";
 import JobDescriptionPage from "./pages/job-description/job-description-page";
 import ReviewsPage from "./pages/reviews/reviewspage";
-import SigninSignupPage from "./pages/singin-and-signup/signin-and-signup-page";
+import SigninSignupPage from "./pages/singin-and-signup/signin";
 import ErrorPage from "./pages/error/error-page";
 import JobSearchPage from "./pages/job-description/job-search-page";
 import ContractorOverviewPage from "./pages/contractor-overview/contractor-Overview-Page";
-import SignupForm from "./pages/singin-and-signup/signup";
+import SigninPage from "./pages/singin-and-signup/signin";
 import SignupFormPage from "./pages/singin-and-signup/signup";
 
 const App = () => {
