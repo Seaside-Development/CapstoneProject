@@ -3,7 +3,7 @@ import React from "react";
 const SignupFormPage = () => {
   return (
     <div className=" flex justify-center ">
-      <div className="card w-3/6 shadow-md border-round p-8 m-8">
+      <div className="card w-3/6 shadow-md rounded-lg p-8 m-8">
         <h1 className=" text-center font-semibold text-2xl"> Sign Up Form</h1>
         <form className=" py-5 space-y-8 divide-y divide-gray-200">
           <div className="space-y-8 divide-y divide-gray-200 sm:space-y-5">
