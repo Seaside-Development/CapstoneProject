@@ -1,11 +1,20 @@
 import React from "react";
+import Axios from "axios";
 
 const SigninPage = () => {
   
+  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted");
+    alert('Cool')
+    let test=Axios.post('https://seaside-bb.herokuapp.com/api/users/login', {email: 'john.cena@gmail.com', password: 'password'}).then((response)=>{
+      alert (response);
+    })
   };
+
+
 
   return (
     <div className=" h-screen w-screen">
