@@ -17,7 +17,7 @@ const Header = () => {
           <NavLink to="/" activeStyle>
             Home
           </NavLink>
-          <NavLink to="/accounts" activeStyle>
+          <NavLink to="/myAccount" activeStyle>
             Profile
           </NavLink>
           <NavLink to="/contact-us" activeStyle>
@@ -30,7 +30,7 @@ const Header = () => {
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to="/signin-signup">Login</NavBtnLink>
+          <NavBtnLink to="/signinpage">Login</NavBtnLink>
           <NavBtnLink to="/JobSearchPage">Add Listing</NavBtnLink>
         </NavBtn>
       </Nav>
