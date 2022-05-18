@@ -34,7 +34,7 @@ const SigninSignupPage = () => {
           <p className="mt-2 text-center text-sm text-gray-600">
             Or{" "}
             <a
-              href="#"
+              href="/src/pages/singin-and-signup/signup.jsx"
               className="font-medium text-indigo-600 hover:text-indigo-500"
             >
               Sign Up
