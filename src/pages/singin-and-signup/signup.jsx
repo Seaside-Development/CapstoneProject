@@ -209,32 +209,19 @@ const SignupFormPage = () => {
                           <div className="mt-4 space-y-4">
                             <div className="flex items-center">
                               <input
-                                id="push-everything"
+                                id="push-yes"
                                 name="push-notifications"
                                 type="radio"
                                 className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
                               />
                               <label
-                                htmlFor="push-everything"
+                                htmlFor="push-yes"
                                 className="ml-3 block text-sm font-medium text-gray-700"
                               >
-                                Everything
+                                Yes I want notifications.
                               </label>
                             </div>
-                            <div className="flex items-center">
-                              <input
-                                id="push-email"
-                                name="push-notifications"
-                                type="radio"
-                                className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
-                              />
-                              <label
-                                htmlFor="push-email"
-                                className="ml-3 block text-sm font-medium text-gray-700"
-                              >
-                                Same as email
-                              </label>
-                            </div>
+
                             <div className="flex items-center">
                               <input
                                 id="push-nothing"
@@ -246,7 +233,7 @@ const SignupFormPage = () => {
                                 htmlFor="push-nothing"
                                 className="ml-3 block text-sm font-medium text-gray-700"
                               >
-                                No push notifications
+                                No push notifications.
                               </label>
                             </div>
                           </div>
