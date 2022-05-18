@@ -184,8 +184,7 @@ const SignupFormPage = () => {
                 Notifications
               </h3>
               <p className="mt-1 max-w-2xl text-sm text-gray-500">
-                We'll always let you know about important changes, but you pick
-                what else you want to hear about.
+                We'll always let you know about important changes.
               </p>
             </div>
             <div className="space-y-6 sm:space-y-5 divide-y divide-gray-200">
