@@ -24,18 +24,18 @@ export const List = styled.li`
 
 // MAIN CONTAINER SURROUNDING THE FOOTER
 export const Container = styled.div`
-background: rgb(199 210 254);
   padding: 20px;
   background-position: center center;
   background-repeat: no-repeat;
   flex: 1;
-  background: #fffcfd;
+  background: #c7d2fd;
   bottom: 0;
   width: WINDOW_WIDTH%;
   font-family: "Poppins", sans-serif;
   @media screen and (max-width: 800px) {
     background: #fffcfd;
-  }`;
+  }
+`;
 
 export const OptionLink2 = styled.div`
   cursor: pointer;
