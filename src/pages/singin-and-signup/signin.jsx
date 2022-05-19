@@ -4,14 +4,17 @@ import Axios from "axios";
 const SigninPage = () => {
   
   
-
-  const handleSubmit = (e) => {
+    const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted");
-    alert('Cool')
-    let test=Axios.post('https://seaside-bb.herokuapp.com/api/users/login', {email: 'john.cena@gmail.com', password: 'password'}).then((response)=>{
-      alert (response);
+    
+    console.log(e.target.email.value);
+    console.log(e.target.password.value);
+    alert('Form Submitted')
+    Axios.post('http://seaside-bb.herokuapp.com/api/users/login', {email: e.target.email.value, password: e.target.password.value}).then((response)=>{
+      console.log(response);
     })
+    
+    
   };
 
 
@@ -107,12 +110,14 @@ const SigninPage = () => {
               </div>
 
               <div>
-                <button
-                  type="submit"
-                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >
-                  Login
-                </button>
+                {/* <Link to="/dashboard"> */}
+                  <button
+                    type="submit"
+                    className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                  
+                    >Login
+                  </button>
+                {/* </Link>  */}
               </div>
             </form>
 
