@@ -1,33 +1,39 @@
 import React from "react";
 import Axios from "axios";
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 
 const SigninPage = () => {
   
-  const [formData,setFormData]=useState({
-    email: '',
-    password:''
+  //set the state to empty string
+  const [formData, setFormData]=useState({
+    email: '', password:''
   })
 
   const {email,password}=formData
   
-    const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    console.log(e.target.email.value);
-    console.log(e.target.password.value);
+    const handleSubmit = async event => {
+      event.preventDefault(); 
+    console.log(event.target.email.value);
+    console.log(event.target.password.value);
     alert('Form Submitted')
-    Axios.post('http://seaside-bb.herokuapp.com/api/users/login', {email: e.target.email.value, password: e.target.password.value}).then((response)=>{
+    Axios.post('http://seaside-bb.herokuapp.com/api/users/login', {email: event.target.email.value, password: event.target.password.value}).then((response)=>{
       console.log(response);
     })
     
     
   };
 
+  const onChange  = (e) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value
+    }))
+  };
 
 
   return (
-    <div className=" h-screen w-screen">
+    <>
+      <div className=" h-screen w-screen">
       <div className="min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md pb-4">
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
@@ -61,11 +67,12 @@ const SigninPage = () => {
                 </label>
                 <div className="mt-1">
                   <input
+                    //handleChange={handleChange}
                     id="email"
                     name="email"
                     type="email"
-                    autoComplete="email"
                     value={email}
+                    onChange={onChange}
                     required
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     placeholder="Email"
@@ -82,11 +89,11 @@ const SigninPage = () => {
                 </label>
                 <div className="mt-1">
                   <input
+                    onChange={onChange}
                     id="password"
                     name="password"
                     type="password"
                     value={password}
-                    autoComplete="current-password"
                     required
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     placeholder="Password"
@@ -141,6 +148,7 @@ const SigninPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
