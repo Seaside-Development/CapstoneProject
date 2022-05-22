@@ -1,8 +1,15 @@
 import React from "react";
 import Axios from "axios";
+import {useState, useEffect} from 'react'
 
 const SigninPage = () => {
   
+  const [formData,setFormData]=useState({
+    email: '',
+    password:''
+  })
+
+  const {email,password}=formData
   
     const handleSubmit = (e) => {
     e.preventDefault();
@@ -58,8 +65,10 @@ const SigninPage = () => {
                     name="email"
                     type="email"
                     autoComplete="email"
+                    value={email}
                     required
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    placeholder="Email"
                   />
                 </div>
               </div>
@@ -76,9 +85,11 @@ const SigninPage = () => {
                     id="password"
                     name="password"
                     type="password"
+                    value={password}
                     autoComplete="current-password"
                     required
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    placeholder="Password"
                   />
                 </div>
               </div>
