@@ -11,7 +11,7 @@ const SigninPage = () => {
 
   const {email,password}=formData
   
-    const handleSubmit = async event => {
+  const handleSubmit = async event => {
       event.preventDefault(); 
     console.log(event.target.email.value);
     console.log(event.target.password.value);
