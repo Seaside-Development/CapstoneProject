@@ -28,6 +28,7 @@ export const createJobRequest = createAsyncThunk (
     }
 )
 
+//Get the job the contractor ID 
 export const getJobrequestByContractorId = createAsyncThunk (
     'jobrequests/getJobrequestByContractorId',
     async (contractorId, thunkAPI) => {
