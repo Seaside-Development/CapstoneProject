@@ -1,11 +1,37 @@
-import React from "react";
+import React, {useState} from "react";
 import { PaperClipIcon } from "@heroicons/react/solid";
+import {useDispatch } from "react-redux";
+import { createJobRequest } from "../../features/jobrequest/jobSlice";
 
 const JobForm = () => {
   /* This example requires Tailwind CSS v2.0+ */
+  const [job, setJob] = useState({
+    title: "",
+    complexity: "",
+    industry: "",
+    description: "",
+    services: "",
+    length: "",
+    parish: "",
+    status: "",
+    startdate: "",
+  });
+
+  const dispatch = useDispatch();
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    dispatch(createJobRequest(job));
+
+    setJob({...job});
+
+  };
+
+
 
   return (
-    <div className="bg-white shadow overflow-hidden sm:rounded-lg">
+    <>
+      <div className="bg-white shadow overflow-hidden sm:rounded-lg">
       <div className="px-4 py-5 sm:px-6">
         <h3 className="text-lg leading-6 font-medium text-gray-900">
           Applicant Information
@@ -105,6 +131,7 @@ const JobForm = () => {
         </dl>
       </div>
     </div>
+    </>
   );
 };
 
