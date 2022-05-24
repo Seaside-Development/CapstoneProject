@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Axios from "axios";
 import {useState} from 'react'
+import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import {toast} from 'react-toastify'
+import { login, reset } from "../../features/auth/authSlice";
+
+
 
 const SigninPage = () => {
   
@@ -9,6 +15,25 @@ const SigninPage = () => {
     email: '', password:''
   })
 
+  const navigate=useNavigate()
+  const dispatch=useDispatch()
+
+  const {user, isError, isSuccess, message}=useSelector(
+    (state)=> state.auth
+  )
+
+    useEffect(()=>{
+      if(isError){
+        toast.error(message)
+      }
+
+      if(isSuccess){
+        navigate('/dashboard')
+      }
+
+    },[user, isError,isSuccess,message, navigate])
+
+
   const {email,password}=formData
   
   const handleSubmit = async event => {
@@ -16,11 +41,20 @@ const SigninPage = () => {
     console.log(event.target.email.value);
     console.log(event.target.password.value);
     alert('Form Submitted')
-    Axios.post('http://seaside-bb.herokuapp.com/api/users/login', {email: event.target.email.value, password: event.target.password.value}).then((response)=>{
-      console.log(response);
-    })
+    
+    const userData={
+      email,
+      password
+    }
     
     
+    // Axios.post('http://seaside-bb.herokuapp.com/api/users/login', {email: event.target.email.value, password: event.target.password.value}).then((response)=>{
+    //   console.log(response);
+    // })
+    
+    dispatch(login(userData))
+
+
   };
 
   const onChange  = (e) => {
