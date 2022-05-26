@@ -23,7 +23,7 @@ import JobSearchPage from "./pages/job-description/job-search-page";
 import ContractorOverviewPage from "./pages/contractor-overview/contractor-Overview-Page";
 import SigninPage from "./pages/singin-and-signup/signin";
 import SignupFormPage from "./pages/singin-and-signup/signup";
-import { ToastContainer } from "react-bootstrap";
+//import { ToastContainer } from "react-bootstrap";
 
 const App = () => {
   return (
