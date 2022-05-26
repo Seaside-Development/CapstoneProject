@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { configureStore } from "@reduxjs/toolkit";
 import authReducer from "../features/auth/authSlice";
 import jobRequestReducer from "../features/jobrequest/jobSlice";
@@ -11,3 +12,16 @@ export const store = configureStore({
         contractor: contractorReducer,
     },
 });
+=======
+import { configureStore } from '@reduxjs/toolkit';
+import authReducer from '../features/auth/authSlice';
+
+
+
+export const store=configureStore({
+    reducer: {
+        auth: authReducer,
+    },
+
+})
+>>>>>>> 7513dbdd715c7783dd66185f569645f86a2b8dd0
