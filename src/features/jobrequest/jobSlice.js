@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import jobService from "../jobrequest/jobService";
 
 const initialState = {
-    goals: [],
+    jobrequest: [],
     isError: false,
     isSuccess: false,
     isLoading: false,
