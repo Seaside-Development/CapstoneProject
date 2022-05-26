@@ -5,7 +5,6 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import 'react-toastify/dist/ReactToastify.css'
 
-// import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/header/header.components";
 import Footer from "./components/footer/footer.components";
 
@@ -23,7 +22,6 @@ import JobSearchPage from "./pages/job-description/job-search-page";
 import ContractorOverviewPage from "./pages/contractor-overview/contractor-Overview-Page";
 import SigninPage from "./pages/singin-and-signup/signin";
 import SignupFormPage from "./pages/singin-and-signup/signup";
-//import { ToastContainer } from "react-bootstrap";
 
 const App = () => {
   return (

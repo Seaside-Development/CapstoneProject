@@ -47,13 +47,7 @@ const SigninPage = () => {
       password
     }
     
-    
-    // Axios.post('http://seaside-bb.herokuapp.com/api/users/login', {email: event.target.email.value, password: event.target.password.value}).then((response)=>{
-    //   console.log(response);
-    // })
-    
     dispatch(login(userData))
-
 
   };
 
