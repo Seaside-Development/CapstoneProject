@@ -25,34 +25,34 @@ import SignupFormPage from "./pages/singin-and-signup/signup";
 const App = () => {
   return (
     <>
-        <Router>
+      <Router>
         <div className="content">
           <Header />
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/dashboard" element={<DashboardPage />} />
-            <Route path="/about-us" element={<AboutUsPage />} />
-            <Route path="/myAccount" element={<UserAccountPage />} />
-            <Route path="/contact-us" element={<ContactUsPage />} />
-            <Route
-              path="/contractor-profile"
-              element={<ContractorAccountPage />}
-            />
-            <Route
-              path="/ContractorCreationPage"
-              element={<ContractorCreationPage />}
-            />
-            <Route path="/job-description" element={<JobDescriptionPage />} />
-            <Route path="/contractor" element={<ContractorOverviewPage />} />
-            <Route path="/reviews" element={<ReviewsPage />} />
-            <Route path="/jobCreation" element={<JobSearchPage />} />
-            <Route path="/signinpage" element={<SigninPage/>} />
-            <Route path="/SignupFormPage" element={<SignupFormPage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
+          <Route path="/about-us" element={<AboutUsPage />} />
+          <Route path="/myAccount" element={<UserAccountPage />} />
+          <Route path="/contact-us" element={<ContactUsPage />} />
+          <Route
+            path="/contractor-profile"
+            element={<ContractorAccountPage />}
+          />
+          <Route
+            path="/ContractorCreationPage"
+            element={<ContractorCreationPage />}
+          />
+          <Route path="/job-description" element={<JobDescriptionPage />} />
+          <Route path="/contractor" element={<ContractorOverviewPage />} />
+          <Route path="/reviews" element={<ReviewsPage />} />
+          <Route path="/jobCreation" element={<JobSearchPage />} />
+          <Route path="/signinpage" element={<SigninPage/>} />
+          <Route path="/SignupFormPage" element={<SignupFormPage />} />
           </Routes>
           <Footer />
         </div>
       </Router>
-      <ToastContainer />
+      <ToastContainer/>
     </>
   );
 };
