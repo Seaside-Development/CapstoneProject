@@ -7,16 +7,15 @@ import {
   NavBtn,
   NavBtnLink,
 } from "./header.styles";
-import { logout, reset } from "../../features/auth/authSlice";
-import { useSelector, useDispatch } from "react-redux";
+// import { logout, reset } from "../../features/auth/authSlice";
+// import { useSelector, useDispatch } from "react-redux";
 
 const Header = () => {
-  const dispatch = useDispatch();
-  const { user } = useSelector((state) => state.auth);
-  const onLogout = () => {
-    dispatch(logout());
-    dispatch(reset());
-  };
+  // const dispatch = useDispatch();
+  // const { user } = useSelector((state) => state.auth);
+  // const onLogout = () => {
+  //   dispatch(logout());
+  // };
   return (
     <>
       <Nav>
@@ -38,14 +37,8 @@ const Header = () => {
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
         <NavBtn>
-          {user ? (
-            <NavBtnLink to="/" onClick={onLogout()}>
-              Logout
-            </NavBtnLink>
-          ) : (
-            <NavBtnLink to="/signinpage">Login</NavBtnLink>
-          )}
           {/* logout button leading to home page, no functionality */}
+          <NavBtnLink to="/signinpage">Login</NavBtnLink>
           <NavBtnLink to="/">Logout</NavBtnLink>{" "}
           <NavBtnLink to="/JobSearchPage">Add Listing</NavBtnLink>
         </NavBtn>
