@@ -11,13 +11,12 @@ import { logout, reset } from "../../features/auth/authSlice";
 import { useSelector, useDispatch } from "react-redux";
 
 const Header = () => {
-
-  const dispatch=useDispatch()
-  const {user }=useSelector((state)=>state.auth);
-  const onLogout=()=>{
-    dispatch(logout())
-    dispatch(reset())
-  }
+  const dispatch = useDispatch();
+  const { user } = useSelector((state) => state.auth);
+  const onLogout = () => {
+    dispatch(logout());
+    dispatch(reset());
+  };
   return (
     <>
       <Nav>
@@ -28,7 +27,7 @@ const Header = () => {
           </NavLink>
           <NavLink to="/myAccount" activeStyle>
             Profile
-          </NavLink>          
+          </NavLink>
           <NavLink to="/contact-us" activeStyle>
             Contact
           </NavLink>
@@ -40,11 +39,14 @@ const Header = () => {
         </NavMenu>
         <NavBtn>
           {user ? (
-            <NavBtnLink to="/" onClick={onLogout()}>Logout</NavBtnLink>
-          ):(
+            <NavBtnLink to="/" onClick={onLogout()}>
+              Logout
+            </NavBtnLink>
+          ) : (
             <NavBtnLink to="/signinpage">Login</NavBtnLink>
           )}
-          
+          {/* logout button leading to home page, no functionality */}
+          <NavBtnLink to="/">Logout</NavBtnLink>{" "}
           <NavBtnLink to="/JobSearchPage">Add Listing</NavBtnLink>
         </NavBtn>
       </Nav>
